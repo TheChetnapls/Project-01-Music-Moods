@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music Moods</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="section container">
+        <div class="container">
+            <h1 class="title">
+                Music Mood
+            </h1>
+            <p class="subtitle">
+                Music Analysis on Your Favorite Artists
+            </p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container block">
+            <h2>Search for an Artist</h2>
+            <input type="text" id="artist-search"></input>
+            <button id="search">Search</button>
+        </div>
+        <div class="container">
+            <h2 id="body-title" class="title"></h2>
+            <div id="chart_div"></div>
+            <div id="albums" class="columns is-multiline"></div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="module" src="./assets/JS/script.js"></script>
+
+</body>
+
+</html>
